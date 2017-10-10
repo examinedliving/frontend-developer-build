@@ -1,0 +1,30 @@
+// media.less
+// #== Media Query Custom and overrides
+
+  // Single Size Queries
+
+    // xs only
+    @xs:~"(max-width:@{screen-xs-max})";
+    // small only
+    @sm:~"(min-width:@{screen-sm-min}) and (max-width:@{screen-sm-max})";
+    // medium only
+    @md:~"(min-width:@{screen-md-min}) and (max-width:@{screen-md-max})";
+    // large only
+    @lg:~"(min-width:@{screen-lg-min})";
+    // xl only
+    @xl:~"(min-width:1500px)";
+
+  // Combos
+
+    // xs and small
+    @xssm:~"(min-width:@{screen-xs-min}) and (max-width:@{screen-sm-max})";
+    // xsmall, small, and medium
+    @xssmmd:~"(min-width:@{screen-xs-min}) and (max-width:@{screen-md-max})";
+    // small and medium
+    @smmd:~"(min-width:@{screen-sm-min}) and (max-width:@{screen-md-max})";
+    // small, medium, and large
+    @smmdlg:~"(min-width:@{screen-sm-min})";
+    // alias for above
+    @smandup:~"(min-width:@{screen-sm-min})";
+    // medium and large
+    @mdlg:~"(min-width:@{screen-md-min})";

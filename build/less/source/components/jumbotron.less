@@ -1,0 +1,47 @@
+/** @.jumbotron
+    @desc adjustments to jumbotron */
+.jumbotron {
+  /* compensates for the 20px margin below the navbar  */
+  margin-top:-20px;
+  /* regularly 30, but we have section padding to consider */
+  margin-bottom:15px;
+  /* so as to hold absolutely positioned child */
+  position: relative;
+
+  padding-top:0;
+  padding-bottom:0;
+  height:50vh;
+  /* preloading this */
+  background-image:none;
+  background-size:cover;
+  background-position: center;
+  h1 {
+    color:#fcf3c5;
+    text-shadow:0 0 15px #f9e580, 0px -2px 1px #131001, 0 -10px 20px rgba(252, 243, 197, 0.75), 0 10px 20px rgba(252, 243, 197, 0.75);
+    text-align:center;
+    font-size:63px;
+    .respond(@lg,{
+      font-size:85px;
+    });
+  }
+}
+
+/* simple vertical alignment for text within jumbotron */
+.centerme{
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* absolutely positioned element inside jumbotron */
+.tagline {
+  background-color:@brand-danger;
+  bottom:0;
+  color:#fcf3c5;
+  position: absolute;
+  text-align:center;
+  width:100%;
+  >h2{
+    margin-top:10px;
+  }
+}

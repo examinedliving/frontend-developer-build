@@ -1,0 +1,59 @@
+/**
+ * @section
+ * @desc rules for sections
+ */
+section,.section {
+	padding:15px;
+}
+/**
+ * @.closing
+ * @desc closing section - footerish
+ */
+.closing{
+	background:@brand-danger;
+	border-top:1px solid darken(@brand-danger, 10%);
+}
+/**
+ * @.group
+ * @desc - content block area
+ */
+	.row.equal {
+		/* act as a normal row on mobile */
+		display:block;
+		border-bottom:1px solid #ddd;
+		align-items: normal;
+		.respond(@smmdlg,{
+			/* vertical alignment for images not mobile */
+			align-items:stretch;
+			display: flex;
+			flex-wrap: wrap;
+		});
+		&:last-child{
+			border-bottom:none;
+		}
+	}
+  .group,
+  .img-group {
+    padding-top:7.5px;
+  	padding-bottom:7.5px;
+  }
+/**
+ * @.img-wrap
+ * @desc - alignment for images
+ */
+	.img-wrap {
+		align-items: center;
+		display:flex;
+		height:100%;
+		>div {
+			align-self:stretch;
+			display:flex;
+			justify-content: center;
+			width:100%;
+		}
+		img {
+			display:block;
+			/* horizontally aligns with dl above and below */
+	 		margin-left:180px;
+		}
+	}

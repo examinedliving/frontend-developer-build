@@ -1,0 +1,24 @@
+{
+	"assets": {
+		"jquery": "js/jquery.js",
+		"jquery_min": "js/jquery.min.js",
+		"jquery_remote": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+		"jquery_remote_min": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+		"vendorjs": ["js/vendor.min.js"],
+		"vendorjs_min": ["js/vendor.min.js"],
+		"vendorjs_remote": [],
+		"vendorjs_remote_min": [],
+		"vendorcss": ["css/vendor.min.css"],
+		"vendorcss_min": ["css/vendor.min.css"],
+		"vendorcss_remote": [],
+		"vendorcss_remote_min": [],
+		"localjs": ["js/index.js", "js/app.js"],
+		"localjs_min": ["js/index.js", "js/app.js"],
+		"localcss": "css/main.css",
+		"localcss_min": "css/main.min.css",
+		"fonts": ["https://fonts.googleapis.com/css?family=Berkshire+Swash|Montserrat"]
+	},
+	"content_data": {
+
+	}
+}

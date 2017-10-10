@@ -1,0 +1,19 @@
+/**
+ * @loading
+ * @desc Rules for ensuring template data and background
+ * images  are loaded before they are visible.
+ * Prevents FOUT
+ */
+.loading {
+  &.jumbotron {
+    opacity:0;
+  }
+  &.row {
+    opacity:0;
+  }
+}
+.row,
+.jumbotron {
+   /* default opacity is already 1.0 */
+   transition: opacity 500ms ease;
+}

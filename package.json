@@ -1,0 +1,41 @@
+{
+  "name": "frontend-developer-build",
+  "version": "1.0.0",
+  "description": "Something Cool For Showing off Dev Skills",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "gulp": "^3.9.1",
+    "gulp-autoload-tasks": "0.0.3",
+    "gulp-changed": "3.1.0",
+    "gulp-cond": "1.0.0",
+    "gulp-data": "1.2.1",
+    "gulp-debug": "3.1.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-jsbeautifier": "^2.1.1",
+    "gulp-less": "3.3.2",
+    "gulp-livereload": "3.8.1",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-minify-css": "1.2.4",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-preprocess": "2.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-uglify": "3.0.0",
+    "gulp-util": "3.0.8",
+    "jsonfile": "^2.2.3",
+    "less-plugin-autoprefix": "^1.5.1",
+    "lodash": "^4.13.1",
+    "postcss-flexibility": "^1.0.3",
+    "preprocess": "^3.1.0",
+    "require-dir": "^0.3.0",
+    "vinyl": "^2.1.0"
+  },
+  "author": "Daniel Gombert, <examined.living@gmail.com>",
+  "license": "ISC",
+  "homepage": "http://dgodesigns.com"
+}

@@ -1,0 +1,32 @@
+// make-ratio.less
+// Create elements that hold an image with a specific aspect ratio
+// #== make-ratio-parent
+	.make-ratio-parent(@x,@y){
+		// creates the padding necessary for a constant height element
+		@padding:percentage(@y/@x);
+		padding-bottom:@padding;
+		position: relative;
+		display: block;
+		height: 0;
+		overflow:hidden;
+	}
+// #== make-ratio-child
+	.make-ratio-child(){
+		// the child element in all the ratios
+		position: absolute;
+		top:0;
+		bottom:0;
+		width:100%;
+		height:100%;
+		border:0;
+		left:0;
+	}
+// #== make-ratio
+// make-ratio is shorthand for the above two mixins
+// child element needs to be specified as element and not class or id
+	.make-ratio(@x,@y,@child){
+		.make-ratio-parent(@x,@y);
+		>@{child} {
+			.make-ratio-child();
+  	}
+  }

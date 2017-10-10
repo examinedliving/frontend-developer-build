@@ -1,0 +1,26 @@
+{
+
+	"env": "dev",
+	"project_root": "C:/Users/Public/projects/frontend-developer-build",
+	"config_root": "C:/Users/Public/projects/frontend-developer-build/config",
+	"js": "app",
+	"less": "main",
+	"vendorjs": "vendor",
+	"vendorless": "vendor",
+	"dist": {
+		"root": "C:/Users/Public/projects/frontend-developer/public"
+	},
+	"build": {
+		"root": "C:/Users/Public/projects/frontend-developer-build/build"
+	},
+	"gulp": {
+		"tasks_path": "config/tasks",
+		"plugin_renames": {
+			"gulp-minify-css": "minify",
+			"gulp-jsbeautifier": "prettify"
+		},
+		"autoprefix_arguments": ["> 1%", "last 2 version"],
+		"postcss_processors": ["postcss-flexibility"]
+	}
+
+}

@@ -1,0 +1,12 @@
+{
+	"contentData": {
+		"font_prefetch": "<link rel='dns-prefetch' href='//fonts.googleapis.com/'>",
+		"scripts_prefetch": "<link rel='dns-prefetch' href='//cdnjs.cloudflare.com/'>",
+		"title": "<title>Gridium Front End Developer Position Details</title>",
+		"charset": "<meta charset='utf-8'>",
+		"description": "<meta name='description' content='Gridium front end developer position details laid out and formatted in an attractive user interface to wow the Gridium management team'>"
+	},
+	"content": {
+		"header-image": ""
+	}
+}

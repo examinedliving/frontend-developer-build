@@ -1,0 +1,23 @@
+/**
+ * @dl-horizontal.nested
+ * @desc rules to accomplish nested dls with a title
+ */
+.dl-horizontal.nested {
+	/* cancels out default margin of 20px at bottom of prev sibling */
+	margin-top:-20px;
+}
+.dl-horizontal dt.dl-nested-label {
+	/* like a subheading for dl */
+	color:@brand-primary;
+	display:inline-block;
+	margin-bottom: 10px;
+	margin-top:10px;
+	overflow:visible;
+	padding:5px 10px;
+	width:auto;
+	.respond(@smmdlg,{
+		display:block;
+		margin-left:90px;
+		text-align: center;
+	});
+}

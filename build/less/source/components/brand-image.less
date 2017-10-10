@@ -1,0 +1,37 @@
+/**
+ * @brand-image
+ * @desc brand-image styling in navbar
+ */
+.brand-image-wrap {
+  float:left;
+  height:50px;
+  width:50%;
+  >div {
+    float:left;
+    height:50px;
+    line-height: 50px;
+    /* for hidden txt: override padding on mobile */
+    margin-left:-15PX;
+    text-align:center;
+    width:100%;
+    .respond(@smmdlg,{
+      /* txt not hidden on desktop */
+      margin-left:0;
+      text-align:left;
+      width:auto;
+      });
+  }
+  >div:first-child{
+    /* txt - hidden by default */
+    display:none;
+    padding-right:0;
+    .respond(@smmdlg,{
+      display:block;
+      padding-right:10px;
+    });
+  }
+  a {
+    /* full high clicking surface */
+    display:block;
+  }
+}

@@ -1,0 +1,21 @@
+// custom mixin to display blockquotes colorized
+
+.custom-blockquote(@color-variable){
+	@bgcolor:~"state-@{color-variable}-bg";
+	@border:~"state-@{color-variable}-border";
+	@text:~"state-@{color-variable}-text";
+
+	.blockquote-@{color-variable}{
+		background-color:@@bgcolor;
+		border-color:@@border;
+		color:@@text;
+	}
+}
+
+/* blockquotes colorized */
+/* created with mixin, custom-blockquote */
+
+.custom-blockquote(success);
+.custom-blockquote(info);
+.custom-blockquote(warning);
+.custom-blockquote(danger);
